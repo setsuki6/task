@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sekiguchi parallax</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+<a class="btn-anc" href="#to"><div class="btn"><div class="anc">自動再生</div></div></a>
+
+<div id="all">
+
+<main>
+   <div id="to"></div>
+   
+    <section class="kumos">
+    
+    </section>
+    <section class="yama">
+        
+    </section>
+    <section class="blocks">
+        <div><img src="img/block2.png" alt=""></div>
+        <div><img src="img/block1.png" alt=""></div>
+        <div><img src="img/block2.png" alt=""></div>
+        <div class="bloke"><img src="img/block1.png" alt=""></div>
+        <div><img src="img/block2.png" alt=""></div>
+        <div class="kane"><img src="img/kane.png" alt=""></div>
+        <div class="hako"><img src="img/block3.png" alt=""></div>
+    </section>
+      <section class="blocks2">
+         <div class="bleak4">
+          <div class="block2_1"><img src="img/block2_1.png" alt=""></div>
+          <div class="block2_2"><img src="img/block2_2.png" alt=""></div>
+          <div class="block2_3"><img src="img/block2_3.png" alt=""></div>
+          <div class="block2_4"><img src="img/block2_4.png" alt=""></div>
+         </div>
+          <div><img src="img/block2.png" alt=""></div>
+          <div><img src="img/block2.png" alt=""></div>
+          <div><img src="img/block2.png" alt=""></div>
+          <div><img src="img/block2.png" alt=""></div>
+          <div><img src="img/block2.png" alt=""></div>
+          <div class="hako2"><img src="img/block1.png" alt=""></div>
+          
+          <div class="hako3"><img src="img/block3.png" alt=""></div>
+          <div class="kane2"><img src="img/kane.png" alt=""></div>
+      </section>
+       <div class="teki1"><img src="img/teki1.png" alt=""></div>
+        <div class="mario"><img src="img/chara1.png" alt=""></div>
+        <div class="teki2"><img src="img/teki1.png" alt=""></div>
+        <div class="teki2_1"><img src="img/teki1_1.png" alt=""></div>
+        <div class="teki3"><img src="img/teki1.png" alt=""></div>
+        <div class="mario2"><img src="img/chara1_1.png" alt=""></div>
+    <section class="kusa5">
+    </section>
+    <section class="kusa6">
+    </section>
+    
+</main>
+<div class="ground"></div>
+<div class="game"><p>げーむおーばー</p></div>
+<div class="conti"><div href="" id="something" value="reload!!"><p>こんてぃにゅー？</p></div></div>
+<!--<button id="something" value="reload!!">こんてぃにゅー？</button>-->
+<div id="top"></div>
+</div>
+
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/mousewheel/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+        //コンテンツの横サイズ
+        var cont = $('#contents');
+        var contW = $('.section').outerWidth(true) * $('div',cont ).length;
+        cont.css('width', contW);
+        //スクロールスピード
+        var speed = 3;
+        //マウスホイールで横移動
+        $('html').mousewheel(function(event, mov) {
+            //ie firefox
+            $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+            //webkit
+            $('body').scrollLeft($('body').scrollLeft() - mov * speed);
+            return false;   //縦スクロール不可
+            });
+        });
+    </script>
+    <script src="js/jquery.scrollParallax-master/dist/js/jquery.scrollParallax.min.js"></script>
+    <script src="js/common.js"></script>
+    
+<!--
+     <script>
+    $(function(){
+    $("main").width($(window).width() + 15000 );　$(window).scroll(function() {
+    if
+    ($(window).scrollLeft() >= ($("main").width() - $(window).width()))     {　$(window).scrollLeft(1);}
+    else if
+    ($(window).scrollLeft() == 0) {　$(window).scrollLeft($("main").width() -    $(window).width() + 150);}});
+    });
+    </script>
+-->
+    <script>
+    $(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^="#"]').click(function() {
+      // スクロールの移動速度
+      var speed = 30000; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().left;
+      // スムーススクロール
+      $('body,html').animate({scrollLeft:position}, speed, 'linear');
+      return false;
+   });
+});
+    </script>
+    <script>
+    $('#something').click(function() {
+  location.reload();
+});
+    </script>
+    
+</body>
+</html>

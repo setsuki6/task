@@ -1,0 +1,299 @@
+@charset :"UTF-8";
+
+/*****再生ボタン*****/
+/*白丸部分 */
+.btn .anc:before {
+    content: "";
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: -15px;
+    top: 70px;
+    left: 75px;
+    z-index: 12;
+}
+/*after要素で右三角 */
+.btn .anc:after {
+    content: "";
+    position: fixed;
+    border: 10px solid transparent;
+    border-left: 15px solid #ffb4b4;
+    margin-left: -5px;
+    top: 75px;
+    left: 75px;
+    z-index: 12;
+}
+/*角丸のピンクボタン部分の装飾*/
+.anc {
+    position: fixed;
+    padding: 10px;
+    color: #fff;
+    background-color: #ffb4b4;
+    border-radius: 16px;
+    font-size: 18px;
+    height: 70px;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+#to {
+    position: static;
+    margin-left: 12501px;
+    width: 1px;
+    height: 1px;
+}
+#top {
+    position: static;
+    margin-left: 13000px;
+    width: 1px;
+    height: 1px;
+}
+
+/*****再生ボタン*****/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background: #aad;
+    width: 15000px !important;
+    height: 600px;
+    z-index: -1;
+    position: relative;
+    top: 0;
+}
+
+.kumos {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    background-image: url(../img/kumo2.png);
+    background-position: 0 0;
+}
+.yama {
+    width: 100%;
+    height: 307px;
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    top: 293px;
+    background-image: url(../img/yama1_2.png);
+    background-position: 0 0;
+}
+.blocks {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: 4100px;
+}
+.blocks2 {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: 7250px;
+}
+.bleak4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.block2_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+.block2_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin: 0px 0px 0px 50px;
+}
+.block2_3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin: 50px 0px 0px 0px;
+}
+.block2_4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50px 0px 0px 50px;
+}
+
+@keyframes roll {
+    from {
+        transform: perspective(500px) rotateY(0deg);
+    }
+    50%{
+        transform: perspective(500px) rotateY(180deg);
+    }
+    to{
+        transform: perspective(500px) rotateY(360deg);
+    }
+}
+.kane {
+    position: relative;
+    top: -192px;
+    left: -192px;
+    opacity: 0;
+    transform:rotateY(3600deg);
+    animation: roll 2s linear infinite;
+    z-index: -10;
+}
+.hako {
+    position: relative;
+    z-index: -5;
+    left: -286px;
+}
+
+.hako2 {
+    
+}
+.hako3 {
+    position: relative;
+    z-index: -5;
+    left: -100px;
+}
+.kane2 {
+    position: relative;
+    top: 8px;
+    left: -192px;
+    opacity: 0;
+    transform:rotateY(3600deg);
+    animation: roll 2s linear infinite;
+    z-index: -10;
+}
+
+.teki1 {
+    position: absolute;
+    z-index: 10;
+    top: 490px;
+    left: 4500px;
+}
+.mario {
+    position: fixed;
+    z-index: 10;
+    top: 388px;
+    left: 200px;
+}
+.mario2 {
+    position: fixed;
+    z-index: 10;
+    top: 388px;
+    left: 592px;
+    opacity: 0;
+}
+.teki2 {
+    position: absolute;
+    z-index: 10;
+    top: 490px;
+    left: 10100px;
+}
+.teki2_1 {
+    position: absolute;
+    z-index: 9;
+    top: 574px;
+    left: 10100px;
+    opacity: 0;
+}
+
+
+.teki3 {
+    position: absolute;
+    z-index: 20;
+    top: 490px;
+    left: 11200px;
+}
+
+.kusa5 {
+    width: 100%;
+    height: 153px;
+    display: flex;
+    position: absolute;
+    z-index: 18;
+    top: 540px;
+    background-image: url('../img/kusa2_2.png');
+    background-position: 0 0;
+}
+.kusa6 {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    z-index: 20;
+    top: 560px;
+    background-image: url('../img/kusa1_2.png');
+    background-position: 0 0;
+    overflow: hidden;
+}
+.ground {
+    position: fixed;
+    z-index: -20;
+    border-bottom: 0;
+    background: #408443;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.game {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    z-index: -5;
+}
+.conti {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 170px 0px 0px;
+    color: #fff;
+    opacity: 0;
+    z-index: -5;
+    
+}
+.conti #something {
+    color: #fff;
+    text-decoration: none;
+}
+
+.conti #something:hover {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+}
