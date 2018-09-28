@@ -1,6 +1,6 @@
 @charset :"UTF-8";
 
-/*****再生ボタン*****/
+/***************再生ボタン***************/
 /*白丸部分 */
 .btn .anc:before {
     content: "";
@@ -54,7 +54,7 @@
     height: 1px;
 }
 
-/*****再生ボタン*****/
+/***************再生ボタン**************/
 
 body {
     width: 100%;
@@ -149,7 +149,7 @@ main {
 }
 .kane {
     position: relative;
-    top: -192px;
+    top: 192px;
     left: -192px;
     opacity: 0;
     transform:rotateY(3600deg);
