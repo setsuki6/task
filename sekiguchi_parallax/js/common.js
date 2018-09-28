@@ -508,3 +508,6 @@ $('.btn').parallaxFit({
 $(function() {
     $('html,body').animate({ scrollLeft: 0 }, '1');
 });
+$(function() {
+    $('html,body').animate({ scrollTop: 0 }, '1');
+});
