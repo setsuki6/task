@@ -1,0 +1,54 @@
+/* Scss Document */
+
+main {
+  height: 100vh;
+}
+.scrolling {
+  > .bg {
+    transform: skewY(-4.5deg);
+    background-color: #ffefdc;
+    margin: -50px auto;
+    padding: 10px 0;
+
+  > p {
+      transform: skewY(4.5deg);
+      width: 60%;
+      margin: 60px auto;
+      font-size: 25px;
+    }
+  }
+}
+.fixed {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  
+  &.bg1 { background-image: url(//www.pakutaso.com/shared/img/thumb/TSURU170321-45%20mm-096_TP_V.jpg); }
+  &.bg2 { background-image: url(//www.pakutaso.com/shared/img/thumb/ELFASIMG_1983_TP_V.jpg); }
+  &.bg3 { background-image: url(//www.pakutaso.com/shared/img/thumb/TSURU170321-45%20mm-096_TP_V.jpg); }
+  &.bg4 { background-image: url(//www.pakutaso.com/shared/img/thumb/hirota_sabanna_TP_V.jpg); }
+}
+
+.fixed.bg1 {
+  position: relative;
+  
+  > .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+    
+    > h1 {
+      font-size: 70px;
+      margin: 0;
+    }
+    > p {
+      font-size: 30px;
+    }
+  }
+}

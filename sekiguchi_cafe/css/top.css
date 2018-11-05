@@ -1,0 +1,269 @@
+@charset :"UTF-8";
+body {
+    background: #ffefdc;
+}
+main {
+  width: 1200px;
+  margin: 0 auto;
+    background: #ffefdc;
+}
+
+header {
+    height: 194px;
+    text-align: center;
+    background-image:url(../images/head.png);
+    background-repeat: no-repeat;
+    z-index : ;
+}
+
+
+header img {
+    margin-top: 12px;
+}
+
+nav {
+     overflow: hidden;
+    margin-top: 10px;
+}
+
+nav ul {}
+
+nav ul li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+    text-align: center;
+    margin-left: -5px;
+}
+
+nav ul li a {
+    padding: 5px 12px;
+    display: block;
+}
+
+nav a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #000;
+    background: #ddd;
+  text-decoration: ;
+}
+
+nav a:active {
+  color: #000;
+  text-decoration: ;
+}
+
+ul li:last-child {
+   border:0;
+}
+
+.opa {
+    position: absolute;
+    top: 360px;
+    width: 1200px;
+    height: 190px;
+    background: #000;
+    opacity: 0.5;
+}
+
+.opa2 {
+    position: relative;
+    font-size: 34px;
+    color: #eee;
+    z-index: 60;
+    top: -348px;
+    margin-left: 350px;
+}
+
+.opa3 {
+    position: relative;
+    font-size: 20px;
+    color: #eee;
+    z-index: 60;
+    top: -330px;
+    margin-left: 410px;
+    line-height: 32px;
+}
+
+section {
+    clear: both;
+}
+
+section a:hover {
+    opacity: 0.6;
+}
+
+.ninki {
+    margin-top: -200px;
+}
+
+.mai {
+    text-align: center;
+    font-size: 28px;
+    color: #111;
+    margin-top: 180px;
+}
+
+.text1 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 56px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.text2 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 124px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.text3 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 136px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.photo1 {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    margin-left: 43px;
+}
+
+.photo2 {
+    float: left;
+    margin-top: 10px;
+    margin-left: 99px;
+}
+
+.photo3 {
+    float: left;
+    margin-top: 10px;
+    margin-left: 99px;
+}
+
+.text4 {
+    clear: both;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-bottom: 200px;
+    line-height: 26px;
+}
+
+.text5 {
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 280px;
+    margin-bottom: 200px;
+    line-height: 26px;
+}
+.text6 {
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 280px;
+    margin-bottom: 200px;
+    line-height: 26px;
+}
+
+
+.sec1 {}
+
+.hei {
+    height: 300px;
+}
+
+.menu {
+    float: left;
+    margin-left: 45px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+.cam {
+    float: left;
+    margin-left: 30px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+.acc {
+    float: left;
+    margin-left: 30px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+.infobox {
+    font-size: 20px;
+    margin: 60px 45px;
+    padding: 20px 20px;
+    height: 300px;
+    width: 400px;
+    overflow:auto;
+    border: #444 1px solid;
+    background-color: #fff; 
+    padding-left: 7.0em;
+    text-indent: -6.0em;
+    float: left;
+}
+.ume {
+    float: left;
+    margin-top: 60px;
+}
+
+section div p {
+    margin-bottom: 30px;
+}
+
+.twi {
+    float:left;
+    margin-left: 445px;
+}
+
+.face {
+    float:left;
+    margin-left: 10px;
+}
+.go {
+    float:left;
+    margin-left: 10px;
+}
+.line {
+    float:left;
+    margin-left: 10px;
+}
+
+.bota {
+    margin-top: 50px;
+    margin-left: 28px;
+    margin-bottom: 350px;
+}
+
+footer {
+    clear: both;
+    color: #fff;
+    text-align: right;
+    line-height: 120px;
+    padding-right: 10px;
+    height: 80px;
+    background-image: url(../images/foot.png)
+}
+
+
